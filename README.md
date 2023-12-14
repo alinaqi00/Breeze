@@ -1,6 +1,3 @@
-Certainly! Here's a more detailed and professionally formatted documentation template. Please adapt the placeholders with your specific project details:
-
-```markdown
 # Laravel Project Documentation
 
 ## Introduction
