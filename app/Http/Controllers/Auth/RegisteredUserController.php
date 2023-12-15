@@ -45,15 +45,15 @@ class RegisteredUserController extends Controller
 
         // Use Twilio to send SMS
         
-             $twilio = new Client(config('services.twilio.sid'),config('services.twilio.token'));
-        // dd($twilio);    
-        $twilio->messages->create(
-            "+923335980276", // User's phone number
-            array(
-                'from' => config('services.twilio.from'),
-                'body' => "Your verification code is: $verificationCode",
-            )
-        );
+        //      $twilio = new Client(config('services.twilio.sid'),config('services.twilio.token'));
+        // // dd($twilio);    
+        // $twilio->messages->create(
+        //     "+923158192177", // User's phone number
+        //     array(
+        //         'from' => config('services.twilio.from'),
+        //         'body' => "Your verification code is: $verificationCode",
+        //     )
+        // );
         return redirect()->route('login');
     }
 
